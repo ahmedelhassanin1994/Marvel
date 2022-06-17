@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mvvm_project/domain/model/model.dart';
 import 'package:mvvm_project/presentation/home/home_screen.dart';
 import 'package:mvvm_project/presentation/home_details/home_details.dart';
-import 'package:mvvm_project/presentation/onbording/onbording_screen.dart';
 import 'package:mvvm_project/presentation/resources/constants/strings_manager.dart';
 import 'package:mvvm_project/presentation/resources/router/router_path.dart';
 import 'package:mvvm_project/presentation/splash/splashScreen.dart';
@@ -18,9 +17,7 @@ class RouteGenerator {
       // return PageTransition(child: SplashScreen(), type: PageTransitionType.scale);
         return _generateMaterialRoute(SplashScreen());
 
-      case Routes.onBordingRoute:
-      // return PageTransition(child: SplashScreen(), type: PageTransitionType.scale);
-        return _generateMaterialRoute(OnBordingScreen());
+
 
       case Routes.home:
         initLoginModel();

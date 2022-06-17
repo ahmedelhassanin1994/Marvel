@@ -33,16 +33,7 @@ class _SplashScreen extends State<SplashScreen> {
   }
 
    _goNext(){
-        _sharedPreferences.isOnBordingScreenView().then((isBordingScreenView){
-          if(isBordingScreenView){
-            Navigator.pushReplacementNamed(context, Routes.home);
-
-          }else{
-            Navigator.pushReplacementNamed(context, Routes.onBordingRoute);
-
-          }
-        });
-
+     Navigator.pushReplacementNamed(context, Routes.home);
    }
 
   @override
